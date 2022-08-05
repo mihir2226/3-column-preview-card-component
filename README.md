@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Click here](https://github.com/mihir2226/3-column-preview-card-component)
-- Live Site URL: [Clickhere](https://your-live-site-url.com)
+- Live Site URL: [Clickhere](https://mihir2226.github.io/3-column-preview-card-component/)
 
 ## My process
 
