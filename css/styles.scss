@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+$brightOrange: hsl(31, 77%, 52%);
+$darkCyan: hsl(184, 100%, 22%);
+$veryDarkCyan: hsl(179, 100%, 13%);
+$transparent: hsla(0, 0%, 100%, 0.75); //white (paragraphs)
+$veryLightGray: hsl(0, 0%, 95%); // (background, headings, buttons)
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $veryLightGray;
+}
+
+.card-container {
+    width: 95vh;
+    height: 49vh;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vh;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    .card1, .card2, .card3 {
+        width: 100%;
+        height: 100%;
+        padding: 0 4.5vh;
+    }
+
+    img {
+        margin-top: 4vh;
+    }
+
+    h1 {
+        font-family: 'Big Shoulders Display', cursive;
+        font-weight: 700;
+        color: $veryLightGray;
+        margin-top: 4vh;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-family: 'Lexend Deca', sans-serif;
+        color: $transparent;
+        font-size: 1.5vh;
+        padding-right: 2vh;
+        margin-top: 3vh;
+        line-height: 1.7;
+    }
+
+    button {
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+        text-transform: capitalize;
+        width: 13.5vh;
+        height: 4vh;
+        margin-top: 8.5vh;
+        border: none;
+        border-radius: 1.6vh;
+    }
+
+    .card1 {
+        background-color: $brightOrange;
+        
+        button {
+            color: $brightOrange;
+        }
+    }
+
+    .card2 {
+        background-color: $darkCyan;
+        button {
+            color: $darkCyan;
+        }
+    }
+
+    .card3 {
+        background-color: $veryDarkCyan;
+        button {
+            color: $veryDarkCyan;
+        }
+    }
+
+    button:hover {
+        background-color: transparent;
+        color: white;
+        border: 0.2vh solid white;
+    }
+}
+
+@media (max-width: 376px) {
+
+    body {
+        height: 100%;
+    }
+
+    .card-container {
+        width: 48vh;
+        height: 100%;
+        display: block;
+        margin: 2vh 0;
+        border-radius: 1vh;
+        overflow: hidden;
+
+        .card1, .card2, .card3 {
+            height: 61vh;
+
+            img {
+                margin-top: 6vh;
+            }
+
+            h1 {
+                font-size: 6vh;
+            }
+
+            p {
+                padding-right: 10vh;
+                font-size: 2.5vh;
+            }
+
+            button {
+                width: 16.5vh;
+                height: 5vh;
+                margin-top: 3.5vh;
+            }
+        }
+
+    }
+}
+
